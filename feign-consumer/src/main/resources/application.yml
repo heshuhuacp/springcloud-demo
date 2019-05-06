@@ -1,0 +1,35 @@
+server:
+  port: 9064
+spring:
+  application:
+    name: feign-consumer
+feign:
+  hystrix:
+    enabled: true
+eureka:
+  client:
+    #healthcheck:
+    #enabled: true
+    service-url:
+      defaultZone: http://peer1:1111/eureka/
+hystrix:
+  threadpool:
+    default:
+      coreSize: 500
+      maxQueueSize: 1000
+      queueSizeRejectionThreshold: 800
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 5000
+HELLO-SERVICE:
+  ribbon:
+    ConnectTimeout: 500
+    ReadTimeout: 2000
+    OkToRetryOnAllOperations: true
+    MaxAutoRetriesNextServer: 2
+    MaxAutoRetries: 1

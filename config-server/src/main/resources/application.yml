@@ -1,0 +1,39 @@
+server:
+  port: 7001
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/heshuhuacp/springcloud-config-learning.git
+          username: heshuhuacp
+          password: hualong1234
+          search-paths: config-repo
+          force-pull: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: springcloud
+    password: springcloud
+  security:
+    user:
+      name: user
+      password: a160af88-6f09-4f51-98a7-7bca7996d3aa
+eureka:
+  client:
+    #healthcheck:
+    #enabled: true
+    service-url:
+      defaultZone: http://localhost:1111/eureka/
+#SpringBoot 1.5.X 以上默认开通了安全认证，如果不关闭会要求权限
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+  health:
+    refresh:
+      enabled: true
+

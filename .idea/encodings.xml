@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/configcenter-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/feign-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq-hello" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-product" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springcloud-service-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stream-hello" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/stream-hello-producer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/trace1" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/trace2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/trace3" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zipkin-server" charset="UTF-8" />
+  </component>
+</project>

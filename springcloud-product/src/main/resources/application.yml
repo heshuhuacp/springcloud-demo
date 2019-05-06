@@ -1,0 +1,11 @@
+server:
+  port: 9580
+spring:
+  application:
+    name: hello-service
+eureka:
+  client:
+    #healthcheck:
+    #enabled: true
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
